@@ -1,6 +1,7 @@
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    display: flex;
 }
 
 #sections{
@@ -18,14 +19,11 @@ li{
     margin-left: 5rem;
 }
 
-img{
-    object-fit: cover;
-}
-
 #headLogo{
     width: 30%;
     display: flex;
-    margin: 5px;
+    margin: 15px;
+    margin-left: 20px;
 }
 
 #headLogo img{
@@ -34,8 +32,87 @@ img{
 }
 
 .navbar{
+    position: fixed;
+    background-color: white;
     width: 100%;
-    height: 5rem;
+    height: 6rem;
     display: flex;
     border-bottom: solid 2px #ACABA9;
+    margin-top: 0px;
 }
+
+.mainPage{
+    margin-top: 6rem;  
+    display: flex;
+}
+
+#header{
+    width: 50%;
+    padding: 3%;
+}
+
+h1{
+    font-size: 5rem;
+    margin-top: 0;
+    font-weight: 900;
+}
+
+#header p{
+    font-size: x-large;
+    line-height: 2;
+    font-weight: bold;
+    color: grey;
+}
+
+#banner{
+    width: 50%;
+}
+#banner img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#education{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    border-bottom: dotted gray;
+}
+
+#education img{
+    max-width: 60%;
+    max-height: 80%;
+    margin-left: 2rem;
+}
+
+#hire{
+    background-color: red;
+    color: white;
+    width: 13rem;
+    height: 3rem;
+    border: 0;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 2.5rem;
+    letter-spacing: 2px;
+}
+#hire:hover{
+    color: red;
+    background-color: white;
+    border: 2px red solid;
+}
+
+#git{
+    margin-left: 5rem;
+    font-size: x-large;
+    color: black;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+#git:hover{
+    text-decoration: underline;
+}
+
