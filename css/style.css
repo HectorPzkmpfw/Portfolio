@@ -1,12 +1,11 @@
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    display: flex;
 }
 
 #sections{
     display: flex;
-    list-style-type: none;
+    list-style: none;
     font-size: x-large;
     font-weight: bold;
     width: 60%;
@@ -22,7 +21,7 @@ li{
 #headLogo{
     width: 30%;
     display: flex;
-    margin: 15px;
+
     margin-left: 20px;
 }
 
@@ -40,31 +39,52 @@ li{
     border-bottom: solid 2px #ACABA9;
     margin-top: 0px;
 }
+a{
+  color: black;
+  text-decoration: none;  
+}
+
+a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#contact{
+    border: solid 1px black;
+    padding: 5px;
+}
 
 .mainPage{
-    margin-top: 6rem;  
     display: flex;
 }
 
 #header{
     width: 50%;
     padding: 3%;
+    margin-top: 6rem;
 }
 
 h1{
+    display: flex;
+    justify-content: center;
     font-size: 5rem;
-    margin-top: 0;
+    margin-top: 2rem;
+    margin-bottom: 30px;
     font-weight: 900;
+    line-height: 1;
 }
 
 #header p{
+    margin-top: 5px;
     font-size: x-large;
-    line-height: 2;
+    line-height: 1.5;
     font-weight: bold;
+    font-size: 2rem;
     color: grey;
 }
 
 #banner{
+    margin-top: 6rem;
     width: 50%;
 }
 #banner img {
@@ -76,18 +96,28 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
     border-bottom: dotted gray;
+    margin-top: 5rem;
+}
+#education h2{
+    font-size: 20px;
 }
 
 #education img{
-    max-width: 60%;
-    max-height: 80%;
+    max-width: 30%;
     margin-left: 2rem;
 }
 
+#links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
 #hire{
-    background-color: red;
+    background-color: rgb(50, 119, 247);
     color: white;
     width: 13rem;
     height: 3rem;
@@ -95,17 +125,17 @@ h1{
     border-radius: 5px;
     font-weight: 500;
     font-size: 30px;
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     letter-spacing: 2px;
 }
 #hire:hover{
-    color: red;
+    color: rgb(50, 119, 247);;
     background-color: white;
-    border: 2px red solid;
+    border: 2px rgb(50, 119, 247) solid;
+    cursor: pointer;
 }
-
 #git{
-    margin-left: 5rem;
+    margin-top: 2rem;
     font-size: x-large;
     color: black;
     font-weight: 900;
@@ -116,3 +146,39 @@ h1{
     text-decoration: underline;
 }
 
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: black;
+    font-size: x-large;
+    color: white;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding: 3%;
+}
+
+.projects li {
+    margin-left: 0;
+    display: list-item;
+    list-style: circle white;
+    color: white;
+    justify-content: left;
+    font-weight: 100;
+}
+
+#skills h2 {
+    display: flex;
+    letter-spacing: 2px;
+    width: 100%;
+    justify-content: center;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skillLogo {
+    max-width: 90px;
+    max-height: 90px;
+}
