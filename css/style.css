@@ -166,6 +166,10 @@ h1{
     font-weight: 100;
 }
 
+#skills{
+    display: flex;
+}
+
 #skills h2 {
     display: flex;
     letter-spacing: 2px;
