@@ -52,6 +52,13 @@ a:hover{
 #contact{
     border: solid 1px black;
     padding: 5px;
+    border-radius: 7px;
+}
+
+#contact:hover{
+    background-color: black;
+    color: white;
+    text-decoration: none;
 }
 
 .mainPage{
