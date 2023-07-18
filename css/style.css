@@ -175,6 +175,7 @@ h1{
 
 #skills{
     display: flex;
+    flex-flow: column;
 }
 
 #skills h2 {
