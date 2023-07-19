@@ -99,6 +99,17 @@ h1{
     max-height: 100%;
 }
 
+#banner {
+    background-image: url(/resources/Cartoon.png);
+    transition-duration: 1s;
+    background-size: cover;
+}
+#banner:hover {
+    background-image: url(/resources/Hector-banner-PhotoRoom.png-PhotoRoom.png);
+    transition-delay: 4s;
+    transition-duration: 1s;
+}
+
 #education{
     display: flex;
     justify-content: center;
