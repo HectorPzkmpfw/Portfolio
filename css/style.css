@@ -11,11 +11,53 @@ body{
     width: 60%;
     align-items: center;
     justify-content: right;
+    margin-right: 1.5rem;
 }
 
-li{
-    display: inline;
-    margin-left: 5rem;
+.navigation{
+    margin-left: 2rem;
+    justify-content: right;
+}
+
+.dropdown{
+    margin-left: 2rem;
+}
+
+.dropdown:hover{
+    cursor: pointer;
+}
+
+span {
+    padding: 10px;
+}
+span:hover{
+    background-color: rgb(50, 119, 247);
+    color: white;
+    border-radius: 5px;
+}
+
+.menu {
+    position: absolute;
+    list-style: none;
+    padding-left: 0;
+    padding-right: 2rem;
+    border: solid 1px rgb(50, 119, 247);
+    border-radius: 5px;
+    background-color:rgb(50, 119, 247);
+    color: white;
+    visibility: hidden;
+    margin: 0;
+    margin-top: 6px;
+}
+
+.menu li{
+    font-size: 1rem;
+    font-weight: 100;
+    padding: 6px;
+}
+
+.menu li:hover{
+    text-decoration: underline;
 }
 
 #headLogo{
@@ -38,6 +80,7 @@ li{
     display: flex;
     border-bottom: solid 2px #ACABA9;
     margin-top: 0px;
+    justify-content: space-between;
 }
 a{
   color: black;
@@ -208,4 +251,52 @@ h1{
 
 #maps{
     grid-column: span 2;
+}
+
+/* RESPONSIVE STYLING FOR TABLETS (768x662px) */
+
+@media  only screen and (max-width: 769px) {
+    .navbar #sections{
+        font-size: 1.3rem;
+        font-weight: 100;
+    }
+     #header h1{
+        font-size: 4rem;
+     }
+     #header p{
+        font-size: 1.5rem;
+        text-align: center;
+     }
+     #education{
+        margin-top: 2.5rem;
+        flex-wrap: wrap;
+     }
+     #links{
+        margin-top: 0;
+        flex-wrap: wrap;
+     }
+     #banner{
+        background-position: center;
+     }
+     .projects{
+        display: flex;
+        justify-content: center;
+     }
+     #projectList h2{
+        text-align: center;
+     }
+     #skills{
+        width: 100%;
+     }
+     #maps{
+        margin-top: 1rem;
+     }
+     #maps h1{
+        font-size: 3rem;
+        text-align: center;
+     }
+
+     /*RESPONSIVE STYLING FOR MOBILE PORT RESOLUTION (425x662px)*/
+     
+
 }
