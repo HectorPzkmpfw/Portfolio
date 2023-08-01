@@ -1,6 +1,7 @@
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    max-width: 100%;
 }
 
 #sections{
@@ -109,4 +110,45 @@ a:hover{
     justify-content: center;
     max-width: 100%;
     max-height: 220px;
+}
+
+@media screen and (max-width: 1025px){
+    #headLogo{
+        margin-left: 0;
+        width: auto;
+    }
+
+    .navbar{
+        max-width: inherit;
+        position: absolute;
+        justify-content: space-between;
+    }
+
+    #sections{
+        justify-content: space-between;
+        margin-right: 2rem;
+        padding: 0;
+    }
+
+    a {
+        text-align: center;
+    }
+
+    li{
+        margin-left: 0;
+    }
+
+    #socialMedia{
+        flex-flow: wrap;
+    }
+    #socialMedia a img{
+        width: 200px;
+        height: 200px;
+    }
+    #gmail{
+        padding: 0;
+        margin-bottom: 30px;
+        border: #ACABA9 solid 1px;
+        border-radius: 5px;
+    }
 }
