@@ -17,6 +17,13 @@ body{
 .navigation{
     margin-left: 2rem;
     justify-content: right;
+    padding: 10px;
+}
+
+.navigation:hover{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
 }
 
 .dropdown{
@@ -93,8 +100,7 @@ a:hover{
 }
 
 #contact{
-    border: solid 1px black;
-    padding: 5px;
+    padding: 10px;
     border-radius: 7px;
 }
 
