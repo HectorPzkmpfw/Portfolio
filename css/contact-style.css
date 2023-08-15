@@ -1,10 +1,10 @@
-body{
+body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     max-width: 100%;
 }
 
-#sections{
+#sections {
     display: flex;
     list-style: none;
     font-size: x-large;
@@ -15,24 +15,24 @@ body{
     margin: 0;
 }
 
-li{
+li {
     display: inline;
     margin-left: 5rem;
 }
 
-#headLogo{
+#headLogo {
     width: 30%;
     display: flex;
 
     margin-left: 20px;
 }
 
-#headLogo img{
+#headLogo img {
     max-width: 100%;
     max-height: 100%;
 }
 
-.navbar{
+.navbar {
     position: fixed;
     background-color: white;
     width: 100%;
@@ -42,18 +42,19 @@ li{
     margin-top: 0px;
 }
 
-.dropdown{
+.dropdown {
     padding: 20px;
     text-align: end;
 }
 
-.dropdown:hover{
+.dropdown:hover {
     cursor: pointer;
 }
 
-#select:hover{
+#select:hover {
     text-decoration: none;
 }
+
 .menu {
     position: absolute;
     list-style: none;
@@ -61,49 +62,60 @@ li{
     padding-right: 2rem;
     border: solid 1px rgb(50, 119, 247);
     border-radius: 5px;
-    background-color:rgb(50, 119, 247);
+    background-color: rgb(50, 119, 247);
     color: white;
     visibility: hidden;
     margin: 0;
     padding: 10px;
 }
 
-.menu li{
+.menu li {
     display: block;
     text-align: left;
     margin-left: 0;
     padding: 7px;
     font-weight: 50;
 }
-a{
-  color: black;
-  text-decoration: none;  
+
+a {
+    color: black;
+    text-decoration: none;
 }
 
-a:hover{
+a:hover {
     cursor: pointer;
     text-decoration: underline;
 }
 
-#contact{
-    border: solid 1px black;
-    padding: 5px;
+.navigation {
+    padding: 10px;
     border-radius: 7px;
 }
 
-#contact:hover{
+.navigation:hover {
+    background-color: black;
+    color: white;
+
+}
+
+#contact {
+    padding: 10px;
+    border-radius: 7px;
+}
+
+#contact:hover {
     background-color: black;
     color: white;
     text-decoration: none;
 }
 
-.mainPage{
+.mainPage {
     width: 100%;
     display: flex;
     flex-flow: column;
 }
 
-#header{
+#header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,59 +125,64 @@ a:hover{
     font-size: 60px;
 }
 
-#header h1{
+#header h1 {
     margin: 0;
 }
 
-#socialMedia{
+#socialMedia {
     display: flex;
     width: 100%;
     justify-content: space-around;
     margin-top: 2.5rem;
 }
 
-.contact{
+.contact {
     width: 250px;
     height: 250px;
-    
+
 }
-.contact h3{
+
+.contact h3 {
     font-size: 25px;
     margin: 0;
 }
 
-.contact img{
+.contact img {
     max-width: 250px;
-    max-height: 250px;  
+    max-height: 250px;
 }
 
-#gmail{
+#gmail {
     display: flex;
     width: 320px;
     flex-flow: column;
     justify-content: center;
 }
 
-#gmail img{
+#gmail img {
     display: flex;
     justify-content: center;
     max-width: 100%;
     max-height: 220px;
 }
 
-@media screen and (max-width: 1025px){
-    #headLogo{
+#inputs {
+    display: none;
+}
+
+@media screen and (max-width: 1025px) {
+    #headLogo {
         margin-left: 0;
         width: auto;
     }
 
-    .navbar{
+    .navbar {
         max-width: inherit;
         position: absolute;
         justify-content: space-between;
     }
 
-    #sections{
+    #sections {
         justify-content: space-between;
         margin-right: 2rem;
         padding: 0;
@@ -175,21 +192,137 @@ a:hover{
         text-align: center;
     }
 
-    li{
+    li {
         margin-left: 0;
     }
 
-    #socialMedia{
+    #socialMedia {
         flex-flow: wrap;
     }
-    #socialMedia a img{
+
+    #socialMedia a img {
         width: 200px;
         height: 200px;
     }
-    #gmail{
+
+    #gmail {
         padding: 0;
         margin-bottom: 30px;
         border: #ACABA9 solid 1px;
         border-radius: 5px;
     }
+}
+
+@media screen and (max-width: 769px) {
+    #header {
+        align-items: start;
+        height: auto;
+    }
+
+    #header h1 {
+        font-size: 6rem;
+        text-align: center;
+    }
+
+    #gmail {
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    #contactSection {
+        visibility: hidden;
+        width: 1px;
+    }
+
+    #sections {
+        margin-right: 2rem;
+        justify-content: right;
+    }
+
+    .socialIcon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .contact {
+        width: 50px;
+    }
+
+    #socialMedia a img {
+        width: 80px;
+        height: 80px;
+    }
+
+    #gmail {
+        width: 50px;
+        height: 50px;
+        border: none;
+    }
+
+    #gmail h3 {
+        display: flex;
+        justify-content: center;
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .navbar{
+        height: fit-content;
+    }
+
+    #headLogo {
+        width: 4rem;
+        height: 4rem;
+        margin-left: 0;
+    }
+
+    #sections {
+        margin-right: 8px;
+    }
+
+    .navigation {
+        font-size: 1rem;
+    }
+
+    .dropdown {
+        font-size: 1rem;
+    }
+
+    #header h1 {
+        font-size: 4rem;
+    }
+
+    #socialMedia {
+        flex-flow: wrap;
+    }
+
+    .socialIcon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 80%;
+        margin: 2rem;
+    }
+
+    .contact{
+        display: block;
+        width: 100%;
+        height: 340px;    
+    }
+
+    #socialMedia a img{
+        width:100%;
+        height: 340px;
+    }
+
+    #gmail {
+        width: 80%;
+        height: 340px;
+    }
+    #gmail img {
+        height: 340px;
+    }
+        
 }
